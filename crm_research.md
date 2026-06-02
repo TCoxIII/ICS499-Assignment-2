@@ -28,12 +28,6 @@ Overall, CRM helps organizations improve communication, organize important data,
 
 Explain why organizations use CRM systems and how CRM systems help different types of organizations improve customer relationships, sales, communication, and service.
 
-### Prompt Used
-
-```text
-Explain why organizations use CRM systems. Include examples from retail, healthcare, education, manufacturing, and nonprofit organizations. Write the answer for a student research report.
-```
-
 ### Response
 
 ```text
@@ -55,12 +49,6 @@ Overall, organizations use CRM systems to improve customer relationships, organi
 ### Task
 
 Identify common business problems that CRM systems help solve. Connect each problem to a CRM feature or module.
-
-### Prompt Used
-
-```text
-What business problems do CRM systems solve? Explain each problem and connect it to a CRM feature that helps solve it. Include examples such as disorganized customer data, missed follow-ups, poor sales tracking, weak reporting, and slow customer service.
-```
 
 ### Response
 
@@ -85,12 +73,6 @@ Overall, CRM systems solve business problems by organizing customer data, improv
 ### Task
 
 List and explain the major modules found in CRM systems. Describe what each module does and why it is useful.
-
-### Prompt Used
-
-```text
-List the major modules commonly found in CRM systems. For each module, explain what it does and why it is useful to an organization. Include contact management, account management, lead management, opportunity management, marketing automation, customer support, reporting, workflow automation, and user administration.
-```
 
 ### Response
 
@@ -138,4 +120,110 @@ ChatGPT was helpful because it organized the topic into sections that were easy 
 Even though the answers were complete and trustworthy, human judgment was still important. I still needed to review the responses, make sure they matched the assignment requirements, and confirm that the information made sense based on my experience. For future sections involving specific CRM products, pricing, or vendor features, I would also verify the information using official sources because those details can change over time.
 
 Overall, ChatGPT was useful for this part of the research. The answers were complete, organized, and consistent with my prior experience using and learning about CRM systems. I would trust AI as a research assistant for explaining general CRM concepts, while still reviewing and verifying the final work before submission.
+```
+# Part 2: CRM Product Comparison
+
+## 2.1 Commercial CRM Comparison
+
+**Status:** Not Started
+
+### Task
+
+Compare commercial CRM products and explain their target customers, strengths, weaknesses, and pricing models.
+
+### Prompt Used
+
+```text
+Compare Salesforce, HubSpot CRM, Zoho CRM, Microsoft Dynamics 365, and Oracle CRM. Include target customer, strengths, weaknesses, and pricing model in a table for a college CRM research assignment.
+```
+
+### Response
+
+```text
+Commercial CRM systems are CRM platforms sold and supported by companies as paid software products or cloud-based subscriptions. These systems are commonly used by businesses that want vendor support, regular updates, integrations, security features, and scalable tools for sales, marketing, customer service, and reporting.
+
+The following table compares several well-known commercial CRM systems:
+
+| CRM Product | Target Customer | Strengths | Weaknesses | Pricing Model |
+|---|---|---|---|---|
+| Salesforce | Medium-sized businesses, large businesses, and enterprises | Very powerful CRM platform, highly customizable, large app ecosystem, strong automation, analytics, sales tools, and AI features | Can be expensive, may require training, setup can be complex, customization may require administrators or consultants | Subscription-based pricing by user and edition |
+| HubSpot CRM | Small businesses, startups, marketing teams, and growing companies | Easy to use, free CRM option, strong marketing tools, good contact tracking, email tools, and user-friendly interface | Advanced features can become expensive, some tools are limited unless paid hubs are added | Freemium model with paid subscription tiers |
+| Zoho CRM | Small to medium-sized businesses | Affordable, includes sales automation, workflows, reports, mobile access, and integration with other Zoho apps | Interface may require learning time, advanced customization can become complex, may not be as enterprise-focused as Salesforce or Microsoft Dynamics | Free edition for limited users and paid subscription plans |
+| Microsoft Dynamics 365 Sales | Medium-sized businesses, large organizations, and companies already using Microsoft tools | Strong integration with Microsoft 365, Outlook, Teams, Power BI, and other Microsoft services; good enterprise features and reporting | Can be complex to configure, may be costly for smaller organizations, best value often comes when already using Microsoft ecosystem | Subscription-based pricing by user and product edition |
+| Oracle CRM / Oracle CX | Large enterprises and organizations with complex customer experience needs | Strong enterprise capabilities, sales, service, marketing, analytics, and integration with Oracle business systems | Can be expensive and complex, may be too large for small businesses, implementation may require technical support | Enterprise licensing and subscription-based pricing |
+
+Overall, commercial CRM systems are useful when organizations want a supported and scalable platform. Salesforce and Microsoft Dynamics 365 are strong enterprise options because they support advanced customization, integrations, and reporting. HubSpot and Zoho CRM are often more approachable for small and medium-sized businesses because they are easier to start with and can be less expensive at the entry level. Oracle CRM is more focused on larger enterprise customer experience environments.
+```
+
+---
+
+## 2.2 Open-Source CRM Comparison
+
+**Status:** Not Started
+
+### Task
+
+Compare open-source CRM systems and explain their features, technology stack, community support, and ease of installation.
+
+### Prompt Used
+
+```text
+Compare SuiteCRM, EspoCRM, Odoo CRM, and Vtiger CRM as open-source CRM systems. Include features, technology stack, community support, and ease of installation in a table for a college CRM research assignment.
+```
+
+### Response
+
+```text
+Open-source CRM systems are CRM platforms where the source code is available for users or organizations to view, modify, and host themselves. These systems can be useful for organizations that want more control over their data, customization, hosting environment, and long-term software costs. However, open-source CRM systems may require more technical skill to install, configure, maintain, and secure.
+
+The following table compares several open-source CRM systems:
+
+| CRM Product | Features | Technology Stack | Community Support | Ease of Installation |
+|---|---|---|---|---|
+| SuiteCRM | Contact management, lead management, opportunities, sales pipeline, workflows, campaigns, reports, and customer service features | Commonly based on PHP and MySQL/MariaDB with a web server environment | Mature open-source CRM community with documentation and partner support | Moderate; may require server setup and configuration |
+| EspoCRM | Contacts, accounts, leads, opportunities, activities, support cases, reports, workflows, and customization tools | PHP and MySQL/MariaDB | Active community, documentation, extensions, and demo availability | Easier than some traditional CRM systems; can be self-hosted or explored through a demo |
+| Odoo CRM | Leads, opportunities, pipeline tracking, activities, email integration, sales tools, and connection to other business apps | Python and PostgreSQL | Large community and commercial ecosystem because Odoo includes many business applications beyond CRM | Moderate; powerful but may require more setup because it is part of a larger business application suite |
+| Vtiger CRM | Contact management, pipeline management, help desk, inventory, reports, sales automation, and customer support tools | PHP and MySQL/MariaDB | Community edition and commercial cloud options are available | Moderate; setup may require technical configuration and server knowledge |
+
+SuiteCRM appears to be one of the more mature open-source CRM options because it has a broad traditional CRM feature set and is designed for sales, marketing, and service teams. EspoCRM appears easier to explore because it has a clean interface, a demo option, and common CRM modules such as contacts, leads, opportunities, and reports. Odoo CRM is useful for organizations that want CRM connected to a larger business system with apps for accounting, inventory, sales, and project management. Vtiger CRM is also a strong option because it includes sales, support, help desk, and reporting features.
+
+Open-source CRM systems can reduce software licensing costs and provide more control, but they also shift more responsibility to the organization. The organization may need to handle hosting, updates, backups, security, and customization.
+```
+
+---
+
+## 2.3 Product Analysis and Recommendations
+
+**Status:** Not Started
+
+### Task
+
+Analyze the CRM comparison results and recommend CRM options for different types of organizations.
+
+### Prompt Used
+
+```text
+Based on a comparison of commercial and open-source CRM systems, recommend one CRM for a small business, one CRM for a large enterprise, and one open-source CRM for an organization that wants control over hosting and customization. Justify each recommendation.
+```
+
+### Response
+
+```text
+Based on the comparison, the best CRM choice depends on the size of the organization, budget, technical skill, and business needs.
+
+For a small business, HubSpot CRM or Zoho CRM would be strong choices. HubSpot CRM is a good option for a small business that wants an easy starting point because it has a free CRM option, a user-friendly interface, and strong tools for contacts, leads, email tracking, and marketing. Zoho CRM is also a good small business option because it is affordable and includes many CRM features such as leads, deals, workflows, reports, and mobile access. If the business wants the simplest start, HubSpot may be better. If the business wants more affordable customization and is willing to spend time learning the system, Zoho CRM may be better.
+
+For a large enterprise, Salesforce or Microsoft Dynamics 365 would be stronger choices. Salesforce is one of the most widely known CRM platforms and is strong for organizations that need customization, automation, analytics, integrations, and a large ecosystem of add-ons. Microsoft Dynamics 365 is a strong enterprise choice for organizations already using Microsoft 365, Outlook, Teams, Azure, or Power BI because it integrates well with the Microsoft environment. Both systems can support larger teams and more complex business processes, but they may require more setup, training, and cost than smaller CRM systems.
+
+For an organization that wants an open-source CRM with more control over hosting and customization, SuiteCRM or EspoCRM would be good options. SuiteCRM appears to be a strong choice for organizations that want a mature open-source CRM with traditional CRM features such as leads, contacts, opportunities, campaigns, workflows, and reports. EspoCRM may be better for an organization that wants a cleaner and easier-to-use interface while still keeping the option to self-host and customize the system.
+
+Overall, the recommendation is:
+
+| Organization Type | Recommended CRM | Reason |
+|---|---|---|
+| Small business | HubSpot CRM or Zoho CRM | Easier to start, lower entry cost, useful contact and sales tools |
+| Large enterprise | Salesforce or Microsoft Dynamics 365 | Strong scalability, integrations, reporting, automation, and enterprise support |
+| Open-source/self-hosted organization | SuiteCRM or EspoCRM | More control over hosting, customization, and data ownership |
+
+The best overall CRM depends on the organization’s goals. A small business may value simplicity and cost. A large enterprise may value scalability and integrations. An organization with technical staff may value open-source control and customization. Because of this, there is no single best CRM for every situation.
 ```
