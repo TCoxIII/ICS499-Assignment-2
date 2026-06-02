@@ -1,1 +1,1 @@
-
+Act as a software consultant. Explain what Customer Relationship Management, also called CRM, means. Explain CRM as both a business strategy and a software system. Write the explanation for a college software engineering capstone report.
