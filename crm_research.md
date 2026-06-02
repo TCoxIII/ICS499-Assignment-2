@@ -125,17 +125,11 @@ Overall, ChatGPT was useful for this part of the research. The answers were comp
 
 ## 2.1 Commercial CRM Comparison
 
-**Status:** Not Started
+**Status:** Complete
 
 ### Task
 
 Compare commercial CRM products and explain their target customers, strengths, weaknesses, and pricing models.
-
-### Prompt Used
-
-```text
-Compare Salesforce, HubSpot CRM, Zoho CRM, Microsoft Dynamics 365, and Oracle CRM. Include target customer, strengths, weaknesses, and pricing model in a table for a college CRM research assignment.
-```
 
 ### Response
 
