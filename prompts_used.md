@@ -5,3 +5,5 @@ List the major modules commonly found in CRM systems. For each module, explain w
 Compare Salesforce, HubSpot CRM, Zoho CRM, Microsoft Dynamics 365, and Oracle CRM. Include target customer, strengths, weaknesses, and pricing model in a table for a college CRM research assignment.
 
 Compare SuiteCRM, EspoCRM, Odoo CRM, and Vtiger CRM as open-source CRM systems. Include features, technology stack, community support, and ease of installation in a table for a college CRM research assignment.
+
+List the functional modules that should be included in a simple CRM MVP. Include authentication, contacts, leads, accounts, opportunities, tasks, reports, customer support, and admin features. Explain each module briefly for a college software architecture report.
