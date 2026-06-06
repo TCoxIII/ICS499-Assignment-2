@@ -273,3 +273,190 @@ The audit logging module records important system actions, such as user logins, 
 
 Together, these modules create a basic CRM system that supports customer relationship management, sales tracking, service management, user security, and business reporting.
 ```
+
+## 4.2 Database Design
+
+**Status:** Complete
+
+### Task
+
+Design a simple MySQL database structure for a basic CRM system. The database should store users, roles, customer information, leads, opportunities, tasks, activities, support tickets, and audit logs.
+
+### Response
+
+```text
+A simple CRM system needs a database that can store customer information, user accounts, sales activity, tasks, support requests, and system history. Since the CRM is designed with PHP and MySQL, the database can be organized into tables that connect related information together.
+
+The users table stores login and profile information for people who use the CRM. This table may include fields such as user ID, name, email, password hash, role ID, status, and created date. The password should not be stored as plain text. Instead, the system should store a hashed password for security.
+
+The roles table stores the different permission groups in the system. Example roles could include admin, manager, sales user, and support user. This table helps the CRM control what each user can access.
+
+The contacts table stores individual customer or client information. This may include a contact ID, first name, last name, email, phone number, address, job title, account ID, notes, and created date. Contacts are important because they represent the people the organization communicates with.
+
+The accounts table stores information about companies, organizations, or customer groups. This may include an account ID, company name, industry, phone number, website, address, and notes. An account can be connected to multiple contacts.
+
+The leads table stores potential customers before they become official customers or sales opportunities. This table may include lead ID, name, email, phone number, source, status, assigned user, and notes. Lead records help sales teams track new interest and follow-up activity.
+
+The opportunities table stores possible sales deals or business opportunities. This may include opportunity ID, account ID, contact ID, deal name, estimated value, sales stage, probability, expected close date, assigned user, and notes. This table helps track the sales pipeline.
+
+The tasks table stores reminders and follow-up work. This may include task ID, title, description, due date, priority, status, assigned user, and related contact, lead, or opportunity. Tasks help users stay organized and avoid missed follow-ups.
+
+The activities table stores communication history and interactions. This may include activity ID, activity type, date, notes, user ID, and related contact, lead, account, or opportunity. Examples of activities include calls, emails, meetings, and notes.
+
+The tickets table stores customer support requests or service issues. This may include ticket ID, subject, description, priority, status, assigned support user, related contact, and resolution notes. This table helps support teams manage customer issues.
+
+The audit_logs table stores important system activity for accountability and security. This may include log ID, user ID, action type, affected table, affected record ID, timestamp, and description. Audit logs help administrators review important actions such as record updates, deleted records, logins, and permission changes.
+
+A basic CRM database could include the following tables:
+
+| Table | Purpose |
+|---|---|
+| users | Stores CRM user accounts and login information. |
+| roles | Stores user roles and permission groups. |
+| contacts | Stores individual customer or client records. |
+| accounts | Stores company or organization records. |
+| leads | Stores potential customer records before they become opportunities. |
+| opportunities | Stores possible sales deals and pipeline information. |
+| tasks | Stores reminders and follow-up tasks. |
+| activities | Stores communication history such as calls, emails, meetings, and notes. |
+| tickets | Stores customer support requests or service issues. |
+| audit_logs | Stores important system actions for security and accountability. |
+
+This database design supports the main CRM functions by keeping customer data, sales data, support data, and system activity organized in related tables.
+```
+
+## 4.3 Useful Libraries and Tools
+
+**Status:** Complete
+
+### Task
+
+Identify useful libraries and tools for building a CRM system with HTML, CSS, JavaScript, jQuery, Bootstrap, PHP, and MySQL. Explain how each library or tool would support development.
+
+
+### Response
+
+```text
+A CRM system built with HTML, CSS, JavaScript, jQuery, Bootstrap, PHP, and MySQL can use several libraries and tools to make development easier and improve the user experience. These tools can help with layout, tables, charts, email, forms, database design, dependency management, and version control.
+
+Bootstrap would be useful for building the front-end interface. It provides ready-made components such as buttons, forms, navigation bars, cards, tables, and grid layouts. This would help make the CRM responsive so it works on different screen sizes.
+
+jQuery would be useful for improving front-end interactivity. It can help with form behavior, AJAX requests, dynamic page updates, and simple user interface actions. For example, jQuery could be used to load contact details without refreshing the entire page.
+
+DataTables would be useful for displaying CRM records in searchable and sortable tables. CRM systems often include large lists of contacts, leads, accounts, opportunities, and support tickets. DataTables can add search, filtering, pagination, and sorting features to these tables.
+
+Chart.js would be useful for dashboards and reports. It can create charts such as bar charts, line charts, and pie charts. A CRM could use Chart.js to display lead status, sales pipeline totals, support ticket trends, or monthly customer activity.
+
+PHPMailer would be useful for sending email notifications from the CRM. For example, the system could send password reset emails, task reminders, lead assignment notifications, or support ticket updates.
+
+Composer would be useful for managing PHP dependencies. It helps install and update PHP libraries in an organized way. This makes the project easier to maintain as more libraries are added.
+
+MySQL Workbench would be useful for designing and managing the database. It can help create tables, relationships, and diagrams. It can also be used to run SQL queries and inspect stored CRM data.
+
+Git and GitHub would be useful for version control. Git allows developers to track changes in the code, create branches, and roll back changes when needed. GitHub allows the project to be stored remotely and makes it easier to share work or collaborate.
+
+Client-side and server-side validation tools would also be important. JavaScript can help validate forms before submission, while PHP should validate the data again on the server side. This helps prevent bad or incomplete data from being saved into the CRM database.
+
+Security tools and practices should also be included. PHP password hashing functions can protect stored passwords. Prepared statements through PDO or MySQLi can help prevent SQL injection. Input validation and output escaping can help reduce security risks such as cross-site scripting.
+
+A basic list of useful libraries and tools includes:
+
+| Library or Tool | Purpose |
+|---|---|
+| Bootstrap | Builds responsive layouts and user interface components. |
+| jQuery | Adds interactivity, AJAX requests, and dynamic page behavior. |
+| DataTables | Adds search, sorting, filtering, and pagination to CRM tables. |
+| Chart.js | Creates charts and dashboard visualizations. |
+| PHPMailer | Sends email notifications and password reset messages. |
+| Composer | Manages PHP libraries and dependencies. |
+| MySQL Workbench | Helps design, query, and manage the MySQL database. |
+| Git | Tracks code changes and supports version control. |
+| GitHub | Stores the project remotely and supports collaboration. |
+| PDO or MySQLi | Connects PHP to MySQL and supports prepared statements. |
+
+These libraries and tools would help make the CRM easier to build, easier to maintain, and more useful for end users.
+```
+
+## 4.4 Security Considerations
+
+**Status:** Complete
+
+### Task
+
+Explain the main security concerns for a CRM system built with PHP and MySQL. The section should describe how the system would protect customer data, user accounts, database records, and sensitive business information.
+
+### Response
+
+```text
+Security is very important in a CRM system because the application stores customer information, sales data, support records, user accounts, and other sensitive business information. A CRM system should be designed to protect data from unauthorized access, accidental changes, and common web application attacks.
+
+One important security concern is password protection. User passwords should never be stored as plain text in the database. Instead, the system should store hashed passwords using secure password hashing functions. This helps protect users if the database is ever exposed.
+
+SQL injection is another major concern for a PHP and MySQL CRM system. SQL injection happens when an attacker tries to place harmful SQL code into form fields or URL parameters. The CRM should prevent this by using prepared statements with PDO or MySQLi instead of building SQL queries directly from user input.
+
+Cross-site scripting, also called XSS, is another risk. XSS can happen when unsafe user input is displayed on a page without proper escaping. For example, a malicious script could be entered into a notes field and then run in another user’s browser. The CRM should reduce this risk by validating input and escaping output before displaying data.
+
+CSRF, or cross-site request forgery, is also important to prevent. CSRF attacks trick a logged-in user into submitting an unwanted request. The CRM should use CSRF tokens on forms and important actions such as deleting records, updating customer data, or changing user permissions.
+
+Role-based access control should be used to limit what users can see and do. For example, an administrator may manage users and system settings, a manager may view reports, a sales user may manage leads and opportunities, and a support user may manage tickets. This helps make sure users only access the features and data required for their role.
+
+HTTPS should be used to protect data while it travels between the user’s browser and the server. Without HTTPS, login credentials and customer data could be exposed over the network. HTTPS helps encrypt communication and protect sensitive information in transit.
+
+Session security is also necessary because users stay logged in while using the CRM. The system should use secure session settings, regenerate session IDs after login, set session timeouts, and protect session cookies. This helps reduce the risk of session hijacking.
+
+Input validation should be used on both the client side and server side. Client-side validation can improve the user experience, but server-side validation is required for security. The CRM should validate required fields, email formats, phone numbers, dates, numeric values, and file uploads if attachments are allowed.
+
+Audit logging is useful for accountability and troubleshooting. The system should record important actions such as logins, failed login attempts, created records, updated records, deleted records, and permission changes. Audit logs can help administrators investigate mistakes or suspicious activity.
+
+Backups are another important part of security and reliability. Since a CRM stores important business data, the database should be backed up regularly. Backups should be tested and stored securely so the organization can recover data if there is a failure, mistake, or attack.
+
+Overall, a secure CRM system should protect user accounts, customer records, business data, and system activity. Security should be built into the system from the beginning instead of added later.
+```
+
+## 4.5 MVP Proposal
+
+**Status:** Complete
+
+### Task
+
+Propose a minimum viable product, or MVP, for a basic CRM system. The MVP should include the first features that should be built, explain why those features are most important, and describe possible future improvements.
+
+### Response
+
+```text
+A minimum viable product, or MVP, for a CRM system should include the most important features needed to manage customer relationships, track leads, and organize follow-up work. The goal of the MVP is not to build every possible CRM feature right away. Instead, the first version should focus on the core tools that make the system useful.
+
+The first feature should be user authentication. Users need to be able to log in and log out securely. Since CRM systems contain customer and business information, the system should only be available to approved users.
+
+The MVP should also include basic user roles. For example, an administrator should be able to manage users, while sales users may only need access to contacts, leads, opportunities, and tasks. Basic role control helps protect data and keeps the system organized.
+
+Contact management should be one of the main MVP features. Users should be able to create, view, update, and search contact records. Contact records should include basic information such as name, email, phone number, company, notes, and communication history.
+
+Account management should also be included. Accounts allow the CRM to store information about companies, organizations, or customer groups. This is useful because one account may have multiple related contacts.
+
+Lead management is another important MVP feature. Users should be able to enter new leads, assign leads to users, update lead status, and track follow-up activity. This helps the organization manage potential customers and avoid losing opportunities.
+
+Task management should be included so users can create reminders and follow-up actions. Tasks could include phone calls, emails, meetings, or other customer-related work. This feature helps reduce missed follow-ups and keeps users organized.
+
+A basic dashboard should also be part of the MVP. The dashboard can show simple information such as number of contacts, active leads, open tasks, and recent activity. This gives users a quick overview of the CRM system.
+
+Basic reporting should be included in a simple form. Reports could show leads by status, tasks by due date, contacts by account, or opportunities by stage. Even basic reports are useful because they help managers understand activity and progress.
+
+The first MVP should include the following features:
+
+| MVP Feature | Reason It Is Important |
+|---|---|
+| Login and logout | Protects access to the CRM system. |
+| User roles | Controls what different users can access. |
+| Contact management | Stores individual customer information. |
+| Account management | Stores company or organization information. |
+| Lead management | Tracks potential customers. |
+| Task management | Helps users manage follow-ups and reminders. |
+| Basic dashboard | Gives users a quick view of CRM activity. |
+| Basic reports | Helps managers review customer and sales data. |
+
+Future versions of the CRM could add more advanced features. These could include opportunity management, customer support tickets, marketing automation, email integration, file attachments, advanced reporting, workflow automation, mobile access, and AI-based lead scoring.
+
+Overall, the MVP should focus on the features that provide immediate value: secure access, organized customer information, lead tracking, follow-up tasks, and basic reporting. Once those features are working well, the CRM can be expanded with more advanced tools.
+```
+
