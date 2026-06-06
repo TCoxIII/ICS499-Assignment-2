@@ -235,3 +235,41 @@ A strength of EspoCRM is that it includes common CRM features such as contacts, 
 
 A limitation is that a real organization using the self-hosted version would still need technical support for installation, security, updates, backups, and customization. Overall, EspoCRM would be useful for a small organization that wants an open-source CRM and has the ability to manage or support the system.
 ```
+
+## 4.1 Functional Modules
+
+**Status:** Complete
+
+### Task
+
+Identify and explain the main functional modules that should be included in a basic CRM system. The modules should support customer data management, sales tracking, task management, reporting, security, and administration.
+
+### Response
+
+```text
+A simple CRM system should include several functional modules that work together to manage customer relationships, sales activity, service requests, and business information. Each module supports a specific part of the CRM process.
+
+The authentication module allows users to log in and log out of the system. This is important because CRM systems store sensitive customer and business information. Authentication helps make sure only approved users can access the system.
+
+The user administration module allows administrators to manage users, roles, and permissions. For example, an administrator may give sales users access to leads and opportunities while giving managers access to reports. This module helps control what each user can see and do inside the CRM.
+
+The contact management module stores information about individual people. This may include names, phone numbers, email addresses, job titles, addresses, notes, and communication history. Contact management is one of the core modules of a CRM because it keeps customer information organized in one place.
+
+The account management module stores information about companies, organizations, or customer groups. An account can have multiple contacts connected to it. This is useful for businesses that work with other businesses, schools, vendors, clients, or partner organizations.
+
+The lead management module tracks potential customers before they become real customers or sales opportunities. Leads may come from website forms, phone calls, referrals, campaigns, or events. This module helps users assign leads, update lead status, and track follow-up activity.
+
+The opportunity management module tracks possible sales deals. It can include information such as deal value, sales stage, expected close date, probability of success, and assigned sales representative. This module helps sales teams understand where each deal is in the sales pipeline.
+
+The task management module allows users to create reminders and follow-up tasks. For example, a user may create a task to call a lead, send an email, schedule a meeting, or follow up on a support issue. This helps reduce missed communication and keeps employees organized.
+
+The activity tracking module records customer interactions such as calls, emails, meetings, notes, and updates. This is useful because employees can review the history of communication with a customer before taking the next action.
+
+The customer support module manages customer issues or service requests. It may include support tickets, case status, priority levels, assigned support users, and resolution notes. This helps support teams respond to customer problems in an organized way.
+
+The reporting and dashboard module provides charts, summaries, and reports based on CRM data. Managers can use this module to review sales activity, lead progress, customer trends, task completion, and support issues. Reporting helps the organization make decisions based on data.
+
+The audit logging module records important system actions, such as user logins, record updates, deleted records, and permission changes. This improves accountability and helps administrators investigate problems or unauthorized changes.
+
+Together, these modules create a basic CRM system that supports customer relationship management, sales tracking, service management, user security, and business reporting.
+```
