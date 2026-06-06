@@ -215,3 +215,23 @@ Overall, the recommendation is:
 
 The best overall CRM depends on the organization’s goals. A small business may value simplicity and cost. A large enterprise may value scalability and integrations. An organization with technical staff may value open-source control and customization. Because of this, there is no single best CRM for every situation.
 ```
+
+## 3.2 Installation or Demo Environment and Product Experience
+
+**Status:** Complete
+
+### Task
+
+Explain how the open-source CRM was accessed or installed and briefly describe the experience of using the product.
+
+### Response
+
+```text
+EspoCRM was explored using its online demo environment instead of a local installation. The demo environment was used because it allowed the CRM interface to be reviewed without setting up PHP, MySQL, a web server, or Docker. This made it easier to focus on the CRM features and required screenshots instead of troubleshooting installation issues.
+
+The product experience was straightforward. The interface was clean and organized, and the main CRM areas were easy to locate. The dashboard provided a central view of CRM activity, while the contacts and leads sections showed how customer information and potential sales opportunities can be managed. The reports area showed how CRM data can be reviewed and used for decision-making.
+
+A strength of EspoCRM is that it includes common CRM features such as contacts, accounts, leads, opportunities, activities, and reports while still being open-source. Another strength is that the interface is not overly complicated, which makes it easier to understand for a small organization or student project.
+
+A limitation is that a real organization using the self-hosted version would still need technical support for installation, security, updates, backups, and customization. Overall, EspoCRM would be useful for a small organization that wants an open-source CRM and has the ability to manage or support the system.
+```
